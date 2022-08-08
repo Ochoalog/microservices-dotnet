@@ -14,6 +14,18 @@ services:
     restart: always
     ports: 
       - "6379:6379"
+
+  disocuntdb: 
+    container_name: discountdb
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=ADMIN1234
+      - POSTGRES_DB=DiscountDb
+    restart: always
+    ports: 
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
     
   portainer:
     container_name: portainer
