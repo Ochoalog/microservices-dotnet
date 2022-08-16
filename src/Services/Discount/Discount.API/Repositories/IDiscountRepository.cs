@@ -1,7 +1,7 @@
 ﻿using Discount.API.Entities;
 using System.Threading.Tasks;
 
-namespace Discount.API.Repository
+namespace Discount.API.Repositories
 {
     public interface IDiscountRepository
     {
